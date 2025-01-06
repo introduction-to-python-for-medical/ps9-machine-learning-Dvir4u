@@ -6,8 +6,6 @@ import pandas as pd
 df = pd.read_csv('parkinsons.csv')
 df = df.dropna()
 
-input_features = ['MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)']
-output_feature = 'status'
 input_features = ['PPE', 'DFA']
 output_feature = 'status'
 x = df[input_features]
